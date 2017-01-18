@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MainController@home');
+Route::get('about-us', 'MainController@aboutUs');
+Route::get('contact-us', 'MainController@contactUs');
