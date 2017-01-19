@@ -17,10 +17,4 @@ class MainController extends Controller
 
         return view('main.about-us');
     }
-
-    public function contactUs()
-    {
-
-        return view('main.contact-us');
-    }
 }

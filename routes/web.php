@@ -13,4 +13,5 @@
 
 Route::get('/', 'MainController@home');
 Route::get('about-us', 'MainController@aboutUs');
-Route::get('contact-us', 'MainController@contactUs');
+Route::get('contact-us', 'ContactController@show');
+Route::post('contact-us/send', 'ContactController@send');
