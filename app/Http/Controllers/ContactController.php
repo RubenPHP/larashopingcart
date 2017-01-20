@@ -12,8 +12,10 @@ class ContactController extends Controller
         return view('contact.show');
     }
 
-    public function send()
+    public function send(Request $request)
     {
+
+        $formData = $request->all();
 
         return back();
     }
